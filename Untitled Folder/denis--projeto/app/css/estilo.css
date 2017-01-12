@@ -1,0 +1,59 @@
+.header {
+  background-color: #0082c7;
+}
+
+.container {
+  padding: 0 10%;
+}
+
+.card {
+  background-color: #ebef40;
+  margin: 15px;
+  padding: 15px;
+  display: inline-block;
+  width: 190px;
+}
+
+#mudaLayout {
+  display:none;
+}
+
+.mural-linhas {
+  flex-direction:column;
+}
+
+.mural-linhas .card {
+  flex-basis: auto;
+  width: auto;
+  display: block;
+}
+
+.cartaoSome {
+  transform: scale(0);
+  transition: transform 0.5s linear;
+}
+
+.incluir-cartao {
+  margin:  auto;
+  width:100%;
+}
+
+@media (min-width:560px) {
+  .card {
+    width: 190px;
+    display: inline-block;
+    text-align: left;
+    flex-basis:190px;
+    flex-grow: 1;
+  }
+
+  .mural {
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+  }
+
+  #mudaLayout {
+    display: inline-block;
+  }
+}
